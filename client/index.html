@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJM Technology LLC - AI Solutions, Web & Mobile Development</title>
+    <meta name="description" content="JJM Technology LLC specializes in Gen AI, AI automation, web and mobile development. Professional technology solutions for modern businesses.">
+    <meta name="keywords" content="AI, artificial intelligence, automation, web development, mobile development, generative AI, machine learning">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="JJM Technology LLC - AI Solutions & Development">
+    <meta property="og:description" content="Transform your business with cutting-edge AI solutions, automation, and custom development services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jjmtechnology.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JJM Technology LLC - AI Solutions">
+    <meta name="twitter:description" content="Professional AI, automation, and development services for modern businesses.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); }
+        .fade-in { animation: fadeIn 0.6s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .hover-scale:hover { transform: scale(1.05); }
+        .service-card { transition: all 0.3s ease; }
+        .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="font-sans text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-blue-600">JJM Technology</div>
+                    <div class="text-sm text-gray-500 ml-2">LLC</div>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Projects</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 font-medium transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="#home" class="block text-gray-700 hover:text-blue-600 py-2">Home</a>
+                    <a href="#services" class="block text-gray-700 hover:text-blue-600 py-2">Services</a>
+                    <a href="#about" class="block text-gray-700 hover:text-blue-600 py-2">About</a>
+                    <a href="#projects" class="block text-gray-700 hover:text-blue-600 py-2">Projects</a>
+                    <a href="#contact" class="block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-center">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white pt-24 pb-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center fade-in">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Transform Your Business with<br>
+                    <span class="text-yellow-300">Next-Gen AI Solutions</span>
+                </h1>
+                <p class="text-xl lg:text-2xl mb-10 text-gray-200 max-w-4xl mx-auto leading-relaxed">
+                    Unlock the power of artificial intelligence, automation, and cutting-edge development to drive unprecedented growth and efficiency for your business.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <a href="#services" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all hover-scale inline-flex items-center justify-center">
+                        <i class="fas fa-rocket mr-2"></i>Explore Our Services
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all inline-flex items-center justify-center">
+                        <i class="fas fa-comments mr-2"></i>Start Your Project
+                    </a>
+                </div>
+
+                <!-- Statistics -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">50+</div>
+                        <div class="text-gray-300">Projects Delivered</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">5+</div>
+                        <div class="text-gray-300">Years Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">100%</div>
+                        <div class="text-gray-300">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Our Core Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    We specialize in cutting-edge technology solutions that transform businesses and drive innovation across industries.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Cards -->
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Generative AI</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Custom AI models, intelligent chatbots, content generation systems, and advanced language processing solutions powered by the latest GPT and LLM technologies.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Custom GPT Model Development</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>AI Chatbot Integration</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Content Generation Systems</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Natural Language Processing</li>
+                    </ul>
+                    <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">AI Automation</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Intelligent process automation, workflow optimization, predictive analytics, and smart decision-making systems that streamline your operations.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Process Automation</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Workflow Optimization</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Predictive Analytics</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Smart Decision Systems</li>
+                    </ul>
+                    <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Web Development</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Modern, responsive web applications built with cutting-edge frameworks, optimized for performance, SEO, and user experience.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>React & Next.js Apps</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>E-commerce Platforms</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Progressive Web Apps</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>SEO Optimization</li>
+                    </ul>
+                    <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Mobile Development</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Native and cross-platform mobile applications that deliver exceptional user experiences across iOS and Android devices.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>React Native Apps</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>iOS & Android Native</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>App Store Optimization</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Mobile UI/UX Design</li>
+                    </ul>
+                    <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-500 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-cloud text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Cloud Solutions</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Scalable cloud infrastructure, DevOps automation, and enterprise-grade deployment solutions on AWS, Azure, and GCP.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Cloud Architecture</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>DevOps & CI/CD</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Microservices</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Security & Monitoring</li>
+                    </ul>
+                    <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-lightbulb text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Tech Consulting</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Strategic technology guidance, digital transformation planning, architecture design, and technical leadership for your projects.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Digital Transformation</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Technology Audits</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Architecture Planning</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Team Training</li>
+                    </ul>
+                    <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-8">About JJM Technology</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        We are a forward-thinking technology company that specializes in artificial intelligence, automation, and custom software development. Our mission is to empower businesses with innovative solutions that drive growth, efficiency, and competitive advantage.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Founded on principles of innovation and excellence, we combine cutting-edge technology with deep industry expertise to deliver solutions that not only meet but exceed our clients' expectations.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center p-6 bg-blue-50 rounded-xl">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                            <div class="text-sm text-gray-600">Projects Completed</div>
+                        </div>
+                        <div class="text-center p-6 bg-blue-50 rounded-xl">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">5+</div>
+                            <div class="text-sm text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="text-center p-6 bg-blue-50 rounded-xl">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">24/7</div>
+                            <div class="text-sm text-gray-600">Support Available</div>
+                        </div>
+                        <div class="text-center p-6 bg-blue-50 rounded-xl">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">100%</div>
+                            <div class="text-sm text-gray-600">Client Satisfaction</div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all hover-scale">
+                        <i class="fas fa-handshake mr-3"></i>Partner With Us
+                    </a>
+                </div>
+
+                <div class="space-y-6">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Professional team collaboration" 
+                         class="rounded-xl shadow-lg w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="AI technology and automation" 
+                         class="rounded-xl shadow-lg w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Featured Projects</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Explore our portfolio of successful implementations across AI solutions, web applications, and mobile platforms.
+                </p>
+            </div>
+
+            <!-- Project Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button onclick="filterProjects('all')" class="filter-btn active px-6 py-2 rounded-full border-2 border-blue-600 text-blue-600 font-semibold hover:bg-blue-600 hover:text-white transition-all">All Projects</button>
+                <button onclick="filterProjects('ai')" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-300 text-gray-600 font-semibold hover:border-blue-600 hover:text-blue-600 transition-all">AI Solutions</button>
+                <button onclick="filterProjects('web')" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-300 text-gray-600 font-semibold hover:border-blue-600 hover:text-blue-600 transition-all">Web Apps</button>
+                <button onclick="filterProjects('mobile')" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-300 text-gray-600 font-semibold hover:border-blue-600 hover:text-blue-600 transition-all">Mobile Apps</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                <!-- Project Cards -->
+                <div class="project-card ai bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="AI Customer Support Bot" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 text-xs rounded-full font-semibold bg-blue-600 text-white">AI Solution</span>
+                            <span class="px-3 py-1 text-xs rounded-full font-semibold bg-green-100 text-green-800">Completed</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Intelligent Customer Support Bot</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Advanced AI chatbot with natural language processing that reduced customer service response time by 80% and improved satisfaction scores.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">OpenAI GPT-4</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Python</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">React</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">FastAPI</span>
+                        </div>
+                        <button class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                            View Case Study <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card web bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="E-commerce Platform" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 text-xs rounded-full font-semibold bg-green-600 text-white">Web App</span>
+                            <span class="px-3 py-1 text-xs rounded-full font-semibold bg-green-100 text-green-800">Completed</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">AI-Powered E-commerce Platform</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Full-featured e-commerce solution with AI-driven product recommendations, automated inventory management, and advanced analytics.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Next.js</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Stripe</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">PostgreSQL</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">TensorFlow</span>
+                        </div>
+                        <button class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                            View Case Study <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card mobile bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Finance Tracker App" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 text-xs rounded-full font-semibold bg-purple-600 text-white">Mobile App</span>
+                            <span class="px-3 py-1 text-xs rounded-full font-semibold bg-green-100 text-green-800">Completed</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Smart Finance Tracker</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">AI-powered personal finance app with expense tracking, budget optimization, and predictive analytics for financial planning.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">React Native</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">TensorFlow Lite</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Firebase</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Plaid API</span>
+                        </div>
+                        <button class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                            View Case Study <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card ai bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Workflow Automation Suite" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 text-xs rounded-full font-semibold bg-blue-600 text-white">AI Solution</span>
+                            <span class="px-3 py-1 text-xs rounded-full font-semibold bg-green-100 text-green-800">Completed</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Enterprise Workflow Automation</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Comprehensive automation system that streamlined enterprise operations and reduced manual tasks by 70% across multiple departments.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Python</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">AWS Lambda</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Zapier</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">MongoDB</span>
+                        </div>
+                        <button class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                            View Case Study <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card web bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Healthcare Management System" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 text-xs rounded-full font-semibold bg-green-600 text-white">Web App</span>
+                            <span class="px-3 py-1 text-xs rounded-full font-semibold bg-green-100 text-green-800">Completed</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Healthcare Management Platform</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">HIPAA-compliant patient management system with AI-assisted diagnostics, appointment scheduling, and electronic health records.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Vue.js</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Node.js</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">MongoDB</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">AWS HIPAA</span>
+                        </div>
+                        <button class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                            View Case Study <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card mobile bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Logistics Tracking App" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 text-xs rounded-full font-semibold bg-purple-600 text-white">Mobile App</span>
+                            <span class="px-3 py-1 text-xs rounded-full font-semibold bg-yellow-100 text-yellow-800">In Progress</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Smart Logistics Tracker</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Real-time logistics tracking application with AI-powered route optimization, delivery predictions, and fleet management capabilities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Flutter</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Google Maps</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">ML Kit</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Firebase</span>
+                        </div>
+                        <button class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                            View Progress <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all hover-scale">
+                    <i class="fas fa-folder-plus mr-3"></i>Start Your Project Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Let's Build Something Amazing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Ready to transform your business with cutting-edge technology? Get in touch with our team of experts.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Send us a Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                                <input id="firstName" type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                                <input id="lastName" type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                            <input id="email" type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                            <input id="company" type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Interest *</label>
+                            <select id="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                                <option value="">Select a service</option>
+                                <option value="gen-ai">Generative AI</option>
+                                <option value="ai-automation">AI Automation</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="mobile-development">Mobile Development</option>
+                                <option value="cloud-solutions">Cloud Solutions</option>
+                                <option value="consulting">Tech Consulting</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="budget" class="block text-sm font-medium text-gray-700 mb-2">Project Budget</label>
+                            <select id="budget" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                                <option value="">Select budget range</option>
+                                <option value="under-10k">Under $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="over-100k">Over $100,000</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Project Description *</label>
+                            <textarea id="message" placeholder="Tell us about your project goals, timeline, and any specific requirements..." rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-all hover-scale">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Get in Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Office Location</h4>
+                                    <p class="text-gray-600">123 Innovation Drive<br>Tech City, TC 12345<br>United States</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Email Address</h4>
+                                    <p class="text-gray-600">info@jjmtechllc.com</p>
+                                    <p class="text-gray-600">projects@jjmtechllc.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Phone Numbers</h4>
+                                    <p class="text-gray-600">+1 (803) 525-4143 (Main)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Business Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-600">Saturday: 10:00 AM - 4:00 PM</p>
+                                    <p class="text-gray-600">Sunday: Emergency Support Only</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Connect With Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://linkedin.com/company/jjmtechnology" target="_blank" rel="noopener noreferrer" 
+                               class="w-12 h-12 rounded-lg flex items-center justify-center text-white transition-all bg-blue-600 hover:bg-blue-700 hover-scale" 
+                               aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://twitter.com/jjmtech" target="_blank" rel="noopener noreferrer" 
+                               class="w-12 h-12 rounded-lg flex items-center justify-center text-white transition-all bg-blue-400 hover:bg-blue-500 hover-scale" 
+                               aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://github.com/jjmtechnology" target="_blank" rel="noopener noreferrer" 
+                               class="w-12 h-12 rounded-lg flex items-center justify-center text-white transition-all bg-gray-800 hover:bg-gray-900 hover-scale" 
+                               aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://facebook.com/jjmtechnology" target="_blank" rel="noopener noreferrer" 
+                               class="w-12 h-12 rounded-lg flex items-center justify-center text-white transition-all bg-blue-800 hover:bg-blue-900 hover-scale" 
+                               aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com/jjmtech" target="_blank" rel="noopener noreferrer" 
+                               class="w-12 h-12 rounded-lg flex items-center justify-center text-white transition-all bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 hover-scale" 
+                               aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Response Promise -->
+                    <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-bolt text-green-500 mr-2"></i>
+                            <h4 class="font-semibold text-green-800">Quick Response Guarantee</h4>
+                        </div>
+                        <p class="text-green-700">We respond to all inquiries within 2-4 hours during business days, and provide project estimates within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="text-2xl font-bold text-blue-400">JJM Technology</div>
+                        <div class="text-sm text-gray-400">LLC</div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed max-w-md">
+                        Empowering businesses through innovative AI solutions, intelligent automation, and cutting-edge software development. Your trusted partner for digital transformation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/company/jjmtechnology" target="_blank" rel="noopener noreferrer" 
+                           class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="https://twitter.com/jjmtech" target="_blank" rel="noopener noreferrer" 
+                           class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Twitter">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="https://github.com/jjmtechnology" target="_blank" rel="noopener noreferrer" 
+                           class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="GitHub">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://facebook.com/jjmtechnology" target="_blank" rel="noopener noreferrer" 
+                           class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Facebook">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://instagram.com/jjmtech" target="_blank" rel="noopener noreferrer" 
+                           class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Instagram">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-300 hover:text-blue-400 transition-colors">Generative AI</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-blue-400 transition-colors">AI Automation</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-blue-400 transition-colors">Web Development</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-blue-400 transition-colors">Mobile Development</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-blue-400 transition-colors">Cloud Solutions</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-blue-400 transition-colors">Tech Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-300 hover:text-blue-400 transition-colors">About Us</a></li>
+                        <li><a href="#projects" class="text-gray-300 hover:text-blue-400 transition-colors">Portfolio</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-blue-400 transition-colors">Contact</a></li>
+                        <li><a href="/careers" class="text-gray-300 hover:text-blue-400 transition-colors">Careers</a></li>
+                        <li><a href="/blog" class="text-gray-300 hover:text-blue-400 transition-colors">Blog</a></li>
+                        <li><a href="/case-studies" class="text-gray-300 hover:text-blue-400 transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2024 JJM Technology LLC. All rights reserved. | Transforming businesses through innovation.
+                    </div>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="/privacy" class="text-gray-400 hover:text-blue-400 transition-colors">Privacy Policy</a>
+                        <a href="/terms" class="text-gray-400 hover:text-blue-400 transition-colors">Terms of Service</a>
+                        <a href="/cookies" class="text-gray-400 hover:text-blue-400 transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn" 
+            class="fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 z-50 opacity-0 pointer-events-none hover-scale">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Success Message Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl p-8 max-w-md w-full text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-check text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Message Sent Successfully!</h3>
+            <p class="text-gray-600 mb-6">Thank you for your interest. We'll get back to you within 2-4 hours.</p>
+            <button onclick="closeSuccessModal()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', function() {
+            const button = document.getElementById('scrollToTopBtn');
+            if (window.pageYOffset > 300) {
+                button.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                button.classList.add('opacity-0', 'pointer-events-none');
+            }
+        });
+
+        // Project filtering
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update button states
+            buttons.forEach(btn => {
+                btn.classList.remove('active', 'bg-blue-600', 'text-white');
+                btn.classList.add('border-gray-300', 'text-gray-600');
+            });
+
+            event.target.classList.add('active', 'bg-blue-600', 'text-white');
+            event.target.classList.remove('border-gray-300', 'text-gray-600');
+
+            // Filter cards
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+            const data = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                company: document.getElementById('company').value,
+                service: document.getElementById('service').value,
+                budget: document.getElementById('budget').value,
+                message: document.getElementById('message').value
+            };
+
+            // Simulate API call
+            fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(result => {
+                document.getElementById('success-modal').classList.remove('hidden');
+                e.target.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error sending your message. Please try again.');
+            });
+        });
+
+        // Close success modal
+        function closeSuccessModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all service cards and project cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.service-card, .project-card');
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "JJM Technology LLC",
+        "description": "AI Solutions, Web & Mobile Development",
+        "url": "https://jjmtechnology.com",
+        "logo": "https://jjmtechnology.com/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-123-4567",
+            "contactType": "customer service",
+            "email": "info@jjmtechnology.com"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Innovation Drive",
+            "addressLocality": "Tech City",
+            "addressRegion": "TC",
+            "postalCode": "12345",
+            "addressCountry": "US"
+        },
+        "sameAs": [
+            "https://linkedin.com/company/jjmtechnology",
+            "https://twitter.com/jjmtech",
+            "https://github.com/jjmtechnology",
+            "https://facebook.com/jjmtechnology",
+            "https://instagram.com/jjmtech"
+        ],
+        "serviceType": [
+            "Artificial Intelligence",
+            "AI Automation", 
+            "Web Development",
+            "Mobile Development",
+            "Cloud Solutions",
+            "Technology Consulting"
+        ]
+    }
+    </script>
+</body>
+</html>
