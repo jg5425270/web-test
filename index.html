@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJM Technology LLC - AI Solutions & Development Services</title>
+    <meta name="description" content="JJM Technology LLC provides cutting-edge AI automation, web development, and mobile app solutions. Transform your business with our expert Gen AI services.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jjmtechnology.com/">
+    <meta property="og:title" content="JJM Technology LLC - AI Solutions & Development">
+    <meta property="og:description" content="Expert AI automation, web development, and mobile app solutions for modern businesses.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="JJM Technology LLC - AI Solutions & Development">
+    <meta property="twitter:description" content="Expert AI automation, web development, and mobile app solutions for modern businesses.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #1e40af;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e40af;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #3b82f6;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1e40af;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 80px 0;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            height: 200px;
+            background: linear-gradient(45deg, #3b82f6, #1e40af);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-card h3 {
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-tech {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .tech-tag {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .submit-btn {
+            background: #1e40af;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .contact-info {
+            padding: 2rem 0;
+        }
+
+        .contact-info h3 {
+            color: #1e40af;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .social-links {
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            color: #3b82f6;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #1e40af;
+        }
+
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #3b82f6;
+        }
+
+        .footer-section a {
+            color: #d1d5db;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 2rem;
+            color: #9ca3af;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .services-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #1e40af;
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            text-decoration: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="logo.png" alt="JJM Technology Logo" style="height: 40px; width: auto; display: inline-block; vertical-align: middle; margin-right: 10px;">
+                JJM Technology
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Transform Your Business with AI</h1>
+            <p>JJM Technology delivers cutting-edge AI automation, web development, and mobile solutions that drive real results for modern businesses.</p>
+            <a href="#contact" class="cta-button">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Custom AI solutions, machine learning models, and intelligent automation systems that transform how your business operates and makes decisions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Process Automation</h3>
+                    <p>Streamline operations with intelligent automation workflows, reducing manual tasks and increasing efficiency across your organization.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive websites and web applications built with cutting-edge technologies for optimal performance and user experience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Applications</h3>
+                    <p>Native and cross-platform mobile apps that provide seamless user experiences across iOS and Android devices.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Business Intelligence</h3>
+                    <p>Data analytics and business intelligence solutions that provide actionable insights for strategic decision-making.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Technical Consulting</h3>
+                    <p>Expert technical guidance and strategic consulting to help you navigate digital transformation and technology adoption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">🤖 AI</div>
+                    <div class="project-content">
+                        <h3>Intelligent Customer Support System</h3>
+                        <p>AI-powered chatbot with natural language processing that handles 80% of customer inquiries automatically, reducing response time by 90%.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">OpenAI GPT</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">⚡ AUTO</div>
+                    <div class="project-content">
+                        <h3>Supply Chain Automation Platform</h3>
+                        <p>End-to-end automation system for inventory management, order processing, and supplier communications, improving efficiency by 60%.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🌐 WEB</div>
+                    <div class="project-content">
+                        <h3>E-commerce Analytics Dashboard</h3>
+                        <p>Real-time analytics platform providing comprehensive insights into sales performance, customer behavior, and market trends.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">📱 MOBILE</div>
+                    <div class="project-content">
+                        <h3>Field Service Management App</h3>
+                        <p>Mobile application for field technicians with offline capabilities, GPS tracking, and real-time job updates.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Maps API</span>
+                            <span class="tech-tag">Redux</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">💼 BI</div>
+                    <div class="project-content">
+                        <h3>Financial Risk Assessment Tool</h3>
+                        <p>Machine learning-based system for automated financial risk analysis and compliance reporting for banking sector.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🔧 API</div>
+                    <div class="project-content">
+                        <h3>Multi-tenant SaaS Platform</h3>
+                        <p>Scalable software-as-a-service platform with multi-tenant architecture, role-based access control, and integrated billing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Microservices</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company (Optional)</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <span>info@jjmtechllc.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <span>+1 (803) 525-4143</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <span>123 Tech Street, Innovation City, TC 12345</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>🕒</span>
+                        <span>Mon - Fri: 9:00 AM - 6:00 PM EST</span>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <a href="https://linkedin.com/company/jjmtechnology" target="_blank">💼 LinkedIn</a>
+                        <a href="https://twitter.com/jjmtechnology" target="_blank">🐦 Twitter</a>
+                        <a href="https://github.com/jjmtechnology" target="_blank">💻 GitHub</a>
+                        <a href="https://facebook.com/jjmtechnology" target="_blank">📘 Facebook</a>
+                        <a href="https://instagram.com/jjmtechnology" target="_blank">📷 Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JJM Technology LLC</h3>
+                    <p>Transforming businesses through innovative AI solutions and cutting-edge technology development.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="#services">AI & Machine Learning</a>
+                    <a href="#services">Process Automation</a>
+                    <a href="#services">Web Development</a>
+                    <a href="#services">Mobile Applications</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <a href="#home">About Us</a>
+                    <a href="#projects">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Industries</h3>
+                    <a href="#">Healthcare</a>
+                    <a href="#">Finance</a>
+                    <a href="#">E-commerce</a>
+                    <a href="#">Manufacturing</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 JJMTechLLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#home" class="scroll-top" id="scrollTop">↑</a>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.getElementById('scrollTop');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            // Simulate form submission
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+
+            // Reset form
+            this.reset();
+        });
+
+        // Add some interactive animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all service and project cards
+        document.querySelectorAll('.service-card, .project-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

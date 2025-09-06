@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJM Technology LLC - Gen AI & AI Automation Specialists</title>
+    <meta name="description" content="JJM Technology LLC - Leading Gen AI, AI automation, and intelligent business solutions. Transform your operations with cutting-edge artificial intelligence.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: #1e40af;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(45deg, #60a5fa, #3b82f6);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: white;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: #93c5fd;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            background: white;
+            color: #1e40af;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e40af;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1e40af;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: #1e40af;
+            color: white;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info {
+            font-size: 1.2rem;
+            margin: 2rem 0;
+        }
+        
+        .social-links {
+            margin-top: 2rem;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .social-links a:hover {
+            color: #93c5fd;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <div class="logo-icon">⚡</div>
+                <span>JJM Technology</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>JJM Technology LLC</h1>
+            <p>Leading specialists in Generative AI, AI automation, and intelligent business transformation solutions.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🧠</div>
+                    <h3>Generative AI</h3>
+                    <p>Custom GPT models, AI chatbots, content generation systems, and advanced language processing solutions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>AI Automation</h3>
+                    <p>Intelligent process automation, workflow optimization, and smart decision-making systems that transform operations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>AI Integration</h3>
+                    <p>Seamless AI integration into existing systems, custom development, and technical consulting for AI transformation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <p>📧 info@jjmtechnology.com</p>
+                <p>📞 703 344-1306</p>
+                <p>📍 123 Tech Street, Innovation City, TC 12345</p>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com/company/jjmtechnology" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/jjmtechnology" target="_blank">Twitter</a>
+                <a href="https://github.com/jjmtechnology" target="_blank">GitHub</a>
+                <a href="https://facebook.com/jjmtechnology" target="_blank">Facebook</a>
+                <a href="https://instagram.com/jjmtechnology" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 JJM Technology LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
